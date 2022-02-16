@@ -1,10 +1,5 @@
 # Projeto para estudo Cypress - Backend e FrontEnd
 
-
-Problemas relacionados a SSL
-
-https://stackoverflow.com/questions/45884752/npm-err-code-unable-to-get-issuer-cert-locally
-
 # Extensões VSCODE
 
 
@@ -20,7 +15,3 @@ https://stackoverflow.com/questions/45884752/npm-err-code-unable-to-get-issuer-c
 # Executar dashboard -  
 
 [X] npx cypress run --record --key c7dd38df-8678-41f5-b7d4-8f0503e1b780
-
-# Simular tela Mobile
-
---> 360 x 740
