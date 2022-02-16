@@ -14,4 +14,4 @@
 
 # Executar dashboard -  
 
-[X] npx cypress run --record --key c7dd38df-8678-41f5-b7d4-8f0503e1b780
+[X] npx cypress run --record --key 91519a9a-8d0a-401c-9536-3aa31872f24b
