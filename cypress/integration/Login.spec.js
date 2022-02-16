@@ -1,4 +1,4 @@
-import acesso from '../../support/actions/Login'
+import acesso from '../support/actions/Login'
 
 describe('Login', () => {
     it('Realizar login com sucesso', () => {

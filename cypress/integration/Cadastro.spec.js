@@ -1,4 +1,4 @@
-import cadastro from "../../support/actions/Cadastro";
+import cadastro from "../support/actions/Cadastro";
 
 describe("Cadastro", () => {
   it("Realizar cadastro com sucesso", () => {
