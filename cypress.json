@@ -1,14 +1,5 @@
 {
-  "baseUrl":"https://seubarriga.wcaquino.me/",
+  "baseUrl": "https://seubarriga.wcaquino.me",
   "video": false,
-  "reporter": "cypress-mochawesome-reporter",
-  "reporterOptions": {
-    "reportDir": "cypress/report",
-    "charts": true,
-    "reportPageTitle": "custom-title",
-    "embeddedScreenshots": true,
-    "overwrite": false,
-    "html": false
-  },
   "projectId": "6r8was"
 }
