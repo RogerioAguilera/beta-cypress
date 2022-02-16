@@ -17,6 +17,5 @@
   "dependencies": {
     "aws-sdk": "^2.1073.0",
     "cypress-mochawesome-reporter": "^2.0.1"
-  },
-  "projectId": "6r8was"
+  }
 }
