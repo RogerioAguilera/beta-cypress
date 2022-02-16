@@ -1,13 +1,12 @@
 
-class NovoUsuario {
+class Login {
     go() {
         cy.viewport(1920, 1080)
-        cy.visit('https://seubarriga.wcaquino.me/cadastro')
+        cy.visit('https://seubarriga.wcaquino.me/login')
 
     }
 
-    newForm(nome, email, senha) {
-        cy.get('[id="nome"]').type(nome)
+    newForm( email, senha) {
         cy.get('[id="email"]').type(email)
         cy.get('[id="senha"]').type(senha)
     }
@@ -17,4 +16,4 @@ class NovoUsuario {
     }
 }
 
-export default new NovoUsuario()
+export default new Login()

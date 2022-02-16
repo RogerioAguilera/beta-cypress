@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "start": "cypress run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^7.4.0"
-  }
+    "cypress": "^7.4.0",
+    "mochawesome-merge": "^4.2.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1073.0",
+    "cypress-mochawesome-reporter": "^2.0.1"
+  },
+  "projectId": "6r8was"
 }
