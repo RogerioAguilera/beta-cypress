@@ -2,7 +2,7 @@
 class Cadastro {
   go() {
     cy.viewport(1920, 1080);
-    cy.visit("https://seubarriga.wcaquino.me/cadastro");
+    cy.visit("/cadastro");
   }
 
   newUser(nome, email, senha) {

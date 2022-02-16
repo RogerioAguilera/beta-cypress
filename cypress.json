@@ -1,4 +1,5 @@
 {
+  "baseUrl":"https://seubarriga.wcaquino.me/",
   "video": false,
   "reporter": "cypress-mochawesome-reporter",
   "reporterOptions": {
