@@ -1,19 +1,22 @@
-
 class Login {
-    go() {
-        cy.viewport(1920, 1080)
-        cy.visit('/login')
+  go() {
+    cy.viewport(1920, 1080);
+    cy.visit("/login");
+  }
 
-    }
+  newForm(email, senha) {
+    cy.get('[id="email"]').type(email);
+    cy.get('[id="senha"]').type(senha);
+  }
 
-    newForm( email, senha) {
-        cy.get('[id="email"]').type(email)
-        cy.get('[id="senha"]').type(senha)
+  submit(success, error) {
+    cy.get('[class="btn btn-primary"]').click();
+    if (success) {
+      cy.get('div[class="alert alert-success"]').should("be.visible");
+    } else if (error) {
+      cy.get('div[class="alert alert-danger"]').should("be.visible");
     }
-
-    submit() {
-        cy.get('[class="btn btn-primary"]').click()
-    }
+  }
 }
 
-export default new Login()
+export default new Login();
