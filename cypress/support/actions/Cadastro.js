@@ -1,3 +1,4 @@
+const { faker } = require("@faker-js/faker");
 
 class Cadastro {
   go() {
@@ -5,10 +6,10 @@ class Cadastro {
     cy.visit("/cadastro");
   }
 
-  newUser(nome, email, senha) {
-    cy.get('[id="nome"]').type(nome);
-    cy.get('[id="email"]').type(email);
-    cy.get('[id="senha"]').type(senha);
+  newUser() {
+    cy.get('[id="nome"]').type(`${faker.nome}`);
+    cy.get('[id="email"]').type(`${faker.email}`);
+    cy.get('[id="senha"]').type(`${faker.senha}`);
   }
 
   submit() {

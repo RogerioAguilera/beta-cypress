@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,7 @@
   "devDependencies": {
     "cypress": "^7.4.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.7"
+  }
 }
