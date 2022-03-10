@@ -1,7 +1,7 @@
 class Login {
   go() {
     cy.viewport(1920, 1080);
-    cy.visit("/login");
+    cy.visit("/");
   }
 
   newForm(email, senha) {

@@ -1,4 +1,4 @@
-const { faker } = require("@faker-js/faker");
+import { faker } from "@faker-js/faker";
 
 class Cadastro {
   go() {
@@ -7,9 +7,9 @@ class Cadastro {
   }
 
   newUser() {
-    cy.get('[id="nome"]').type(`${faker.nome}`);
-    cy.get('[id="email"]').type(`${faker.email}`);
-    cy.get('[id="senha"]').type(`${faker.senha}`);
+    cy.get('[id="nome"]').type(`${faker.name.findName()}`);
+    cy.get('[id="email"]').type(`${faker.internet.email()}`);
+    cy.get('[id="senha"]').type(`${faker.internet.password()}`);
   }
 
   submit() {
