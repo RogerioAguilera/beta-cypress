@@ -2,8 +2,6 @@
 pipeline {
     agent any
 
-    tools {nodejs "node"}
-
     environment {
         CHROME_BIN = '/bin/google-chrome'
     }
@@ -19,7 +17,7 @@ pipeline {
                 sh 'npm run build'
             }
         }
-        stage('Unit Tests') {
+        stage('Tests') {
             steps {
                 sh 'npm run cy:run'
             }
