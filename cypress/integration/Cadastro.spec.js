@@ -1,9 +1,9 @@
 import cadastro from "../support/actions/Cadastro";
 
 describe("Cadastro", () => {
-  it("Realizar cadastro com sucesso", () => {
+  it("Dado que realizo cadastro com sucesso", () => {
     cadastro.go();
-    cadastro.newUser("storm", "storm@mail.com", "326pwd");
+    cadastro.newUser();
     cadastro.submit();
   });
 });
