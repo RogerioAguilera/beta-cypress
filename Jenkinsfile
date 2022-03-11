@@ -1,23 +1,21 @@
-#!groovy
 pipeline {
-    agent any
+  agent any
     
-        stage('Dependecies') {
-            steps {
-                sh 'npm i'
-            }
-        }
-
-        stage('Tests') {
-            steps {
-                sh 'npm run cy:run'
-
-            }
-        }
-
-         stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-         }
+  tools {nodejs "node"}
+    
+  stages {
+        
+    stage('Install dependencies') {
+      steps {
+        sh 'npm install'
+       
+      }
     }
+     
+    stage('Test') {
+      steps {
+         sh 'npm run cy:run'
+      }
+    }      
+  }
+}
