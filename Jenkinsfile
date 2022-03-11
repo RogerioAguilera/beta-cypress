@@ -1,8 +1,7 @@
 #!groovy
-
-node('nodejs14') {
-    def nodeHome = tool 'nodejs14'
-   
+pipeline {
+    agent any
+    
         stage('Dependecies') {
             steps {
                 sh 'npm i'
