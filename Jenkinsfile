@@ -1,36 +1,24 @@
 #!groovy
 
-
-pipeline {
-    agent any
-    
-    tools {nodejs "node"}
-
-    environment {
-        CHROME_BIN = '/bin/google-chrome'
-    }
-
-    stages {
-        stage('Install') {
+node('nodejs14') {
+    def nodeHome = tool 'nodejs14'
+   
+        stage('Dependecies') {
             steps {
                 sh 'npm i'
             }
         }
-        stage('Build') {
-            steps {
-                sh 'npm run build'
-            }
-        }
+
         stage('Tests') {
             steps {
                 sh 'npm run cy:run'
+
             }
         }
-        
-        stage('Deploy') {
+
+         stage('Deploy') {
             steps {
                 echo 'Deploying....'
             }
-        }
+         }
     }
-}
