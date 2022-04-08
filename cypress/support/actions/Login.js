@@ -6,7 +6,7 @@ class Login {
 
   newForm(email, senha) {
     cy.get('[id="email"]').type(email);
-    cy.get('[id="senha"]').type(senha);
+    cy.get('[id="senha"]').type(senha, { log: false });
   }
 
   submit(success, error) {

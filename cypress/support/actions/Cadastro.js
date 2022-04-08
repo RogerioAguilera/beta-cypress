@@ -1,5 +1,9 @@
 import { faker } from "@faker-js/faker";
 
+const randomName = faker.name.findName();
+const randomEmail = faker.internet.email();
+const randomPassword = faker.internet.password();
+
 class Cadastro {
   go() {
     cy.viewport(1920, 1080);
@@ -7,9 +11,9 @@ class Cadastro {
   }
 
   newUser() {
-    cy.get('[id="nome"]').type(`${faker.name.findName()}`);
-    cy.get('[id="email"]').type(`${faker.internet.email()}`);
-    cy.get('[id="senha"]').type(`${faker.internet.password()}`);
+    cy.get('[id="nome"]').type(randomName);
+    cy.get('[id="email"]').type(randomEmail);
+    cy.get('[id="senha"]').type(randomPassword, { log: false });
   }
 
   submit() {
