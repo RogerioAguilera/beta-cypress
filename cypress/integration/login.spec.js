@@ -1,4 +1,4 @@
-import acesso from "../support/actions/Login";
+import acesso from "../support/pages/login/login";
 
 describe("Login", () => {
   it("Dado que o Login foi realizado com sucesso", () => {
