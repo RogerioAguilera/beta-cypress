@@ -1,5 +1,5 @@
-import acesso from "../support/pages/Login";
-import addConta from "../support/pages/AdicionarConta";
+import acesso from "../support/pages/login/login";
+import addConta from "../support/pages/contas/adicionarConta";
 
 describe("Adicionar conta", () => {
   it("Adicionar conta com sucesso", () => {
