@@ -1,3 +1,5 @@
+import { el } from "./elements";
+
 import { faker } from "@faker-js/faker";
 
 const randomName = faker.name.findName();
@@ -11,13 +13,13 @@ class Cadastro {
   }
 
   newUser() {
-    cy.get('[id="nome"]').type(randomName);
-    cy.get('[id="email"]').type(randomEmail);
-    cy.get('[id="senha"]').type(randomPassword, { log: false });
+    cy.get(el.nome).type(randomName);
+    cy.get(el.email).type(randomEmail);
+    cy.get(el.senha).type(randomPassword, { log: false });
   }
 
   submit() {
-    cy.get('[class="btn btn-primary"]').click();
+    cy.get(el.submit).click();
   }
 }
 
