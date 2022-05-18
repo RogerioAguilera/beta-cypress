@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker";
 
-class Cadastro {
+class Register {
   go() {
     cy.viewport(1920, 1080);
     cy.visit("/cadastro");
@@ -17,4 +17,4 @@ class Cadastro {
   }
 }
 
-export default new Cadastro();
+export default new Register();

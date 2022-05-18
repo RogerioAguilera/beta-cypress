@@ -1,5 +1,5 @@
-class AdicionarConta {
-  contas() {
+class AddAccount {
+  accounts() {
     const optionContas = ["Listar", "Adicionar"];
 
     optionContas.forEach((d) => {
@@ -9,4 +9,4 @@ class AdicionarConta {
     });
   }
 }
-export default new AdicionarConta();
+export default new AddAccount();
