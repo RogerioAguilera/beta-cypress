@@ -1,3 +1,4 @@
+import { el } from "./elements";
 import { faker } from "@faker-js/faker";
 
 class Register {
@@ -7,13 +8,13 @@ class Register {
   }
 
   newUser() {
-    cy.get('[id="nome"]').type(`${faker.name.findName()}`);
-    cy.get('[id="email"]').type(`${faker.internet.email()}`);
-    cy.get('[id="senha"]').type(`${faker.internet.password()}`);
+    cy.get(el.name).type(`${faker.name.findName()}`);
+    cy.get(el.email).type(`${faker.internet.email()}`);
+    cy.get(el.senha).type(`${faker.internet.password()}`);
   }
 
   submit() {
-    cy.get('[class="btn btn-primary"]').click();
+    cy.get(el.submit).click();
   }
 }
 

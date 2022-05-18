@@ -1,3 +1,5 @@
+import { el } from "./elements";
+
 class Login {
   go() {
     cy.viewport(1920, 1080);
@@ -5,16 +7,16 @@ class Login {
   }
 
   newForm(email, senha) {
-    cy.get('[id="email"]').type(email);
-    cy.get('[id="senha"]').type(senha);
+    cy.get(el.email).type(email);
+    cy.get(el.senha).type(senha);
   }
 
   submit(success, error) {
-    cy.get('[class="btn btn-primary"]').click();
+    cy.get(el.submit).click();
     if (success) {
-      cy.get('div[class="alert alert-success"]').should("be.visible");
+      cy.get(el.success).should("be.visible");
     } else if (error) {
-      cy.get('div[class="alert alert-danger"]').should("be.visible");
+      cy.get(el.danger).should("be.visible");
     }
   }
 }
