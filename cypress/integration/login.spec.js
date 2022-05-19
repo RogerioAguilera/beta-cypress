@@ -4,7 +4,7 @@ describe("Login", () => {
   it("Dado que o Login foi realizado com sucesso", () => {
     access.go();
     access.newForm("ciclope@email.com", "966pwd");
-    access.submit();
+    access.submit()
   });
 
   it("Quando o login deve falhar", () => {
