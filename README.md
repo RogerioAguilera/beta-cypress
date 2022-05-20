@@ -1,8 +1,8 @@
-* Projeto para estudo Cypress - Backend e FrontEnd
+# Projeto para estudo Cypress - Backend e FrontEnd
 
-* Extensões VSCODE
+## Extensões utilizadas
 
-
+```
 - ES6 Mocha Snippets
 - Cypress Snippets
 - Add Only
@@ -11,3 +11,13 @@
 - Material Icon Theme
 - Cypress Helper
 - Visual Studio IntelliCode
+```
+
+## Comandos para utilizar docker
+
+```
+docker build -t beta-cypress-image:1.0.0 .
+
+docker run -t beta-cypress-image:1.0.0 .
+```
+

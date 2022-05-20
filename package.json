@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "cy:clean":""
+
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,7 @@
     "cypress": "^7.4.0"
   },
   "dependencies": {
-    "@faker-js/faker": "^6.0.0-alpha.7"
+    "@faker-js/faker": "^6.0.0-alpha.7",
+    "cypress-mochawesome-reporter": "^3.1.0"
   }
 }
